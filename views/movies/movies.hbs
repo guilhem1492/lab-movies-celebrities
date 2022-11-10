@@ -1,0 +1,12 @@
+<h2>List of movies</h2>
+
+<ul>
+  {{#each allMovies}}
+    <li>
+      <a href="/movies/{{this._id}}">{{this.title}}</a>
+    </li>
+
+  {{/each}}
+</ul>
+
+<p><a href="/">Back to the index page</a></p>

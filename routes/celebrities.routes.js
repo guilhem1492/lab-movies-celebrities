@@ -8,7 +8,7 @@ const Celebrity = require("./../models/Celebrity.model");
 router.get("/celebrities", async (req, res, next) => {
   try {
     const allCelebrities = await Celebrity.find();
-    console.log(allCelebrities);
+    //console.log(allCelebrities);
     res.render("celebrities/celebrities", { allCelebrities });
   } catch (error) {
     next(error);
